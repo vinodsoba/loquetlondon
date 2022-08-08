@@ -1,3 +1,4 @@
+/* eslint-disable */
 const BSB = [
     [0, 0, 0, 0],
     [0, 0, 0, 0],
