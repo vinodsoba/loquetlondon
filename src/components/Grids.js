@@ -51,7 +51,11 @@ class Grids extends Component {
     img_2 = <img src={Dolphin} draggable="true" alt="" width="60" height="62" />;
     img_3 = <img src={Lobster} draggable="true" alt="" width="60" height="62" />;
     img_4 = <img src={PalmTree} draggable="true" alt="" width="60" height="62" />;
-    
+     data = {
+        message: 'Check out this website', // required
+        title: 'Awesome Website', // optional parameter
+        url: 'https://www.awesomeexample.com', // optional parameter
+      };
     counter = 0;
     constructor() {
         super();
@@ -259,7 +263,7 @@ class Grids extends Component {
                         </Col>
 
                         <Col lg={1}></Col>
-                        <Col sm={12} md={10} lg={5} className="item2">
+                        <Col sm={12} md={12} lg={5} className="item2">
                             <div className="help__guide">
                                 <div className="help__guide--headline-how-to">
                                     <h4>HOW TO PLAY</h4>
@@ -272,7 +276,8 @@ class Grids extends Component {
                             </div>
                             <div className="help__guide--container">
                                 <div className="help__guide--headline">
-                                    <h4>DRAG AND DROP CHARMS</h4>
+                                    <h4 className="desktop">DRAG AND DROP CHARMS</h4>
+                                    <h4 className="smaller-devices">SELECT AND PLACE CHARMS</h4>
                                 </div>
                                 <div className='rounded__box' onMouseDown={this.props.data}>
                                     <div
