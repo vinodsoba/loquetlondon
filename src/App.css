@@ -51,9 +51,25 @@
   display: grid;
 }
 
+.smaller-devices {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
 @media (max-width: 991px) {
   .container {
-    max-width: 991px;
+    max-width: 100% !important;
+  }
+
+  .smaller-devices {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 
   .help__guide {
