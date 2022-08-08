@@ -51,11 +51,7 @@ class Grids extends Component {
     img_2 = <img src={Dolphin} draggable="true" alt="" width="60" height="62" />;
     img_3 = <img src={Lobster} draggable="true" alt="" width="60" height="62" />;
     img_4 = <img src={PalmTree} draggable="true" alt="" width="60" height="62" />;
-     data = {
-        message: 'Check out this website', // required
-        title: 'Awesome Website', // optional parameter
-        url: 'https://www.awesomeexample.com', // optional parameter
-      };
+    
     counter = 0;
     constructor() {
         super();
