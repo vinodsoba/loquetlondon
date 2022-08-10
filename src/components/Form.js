@@ -44,13 +44,13 @@ class Form extends React.Component {
                 <input name="@subscription_status" type="hidden" value="SUBSCRIBED" />
                 <input type="hidden" name="__form_id" value={this.state.form_id} />
                 <label>
-                    Email <input name="email" type="text" style={{width: "370px", padding: "5px"}} required value={this.state.form.email} className="input-border" onChange={this.changeHandler}/>
+                    Email <input name="email" type="text" required value={this.state.form.email} className="input-border" onChange={this.changeHandler}/>
                 </label>
                 <label>
-                    First Name <input name="firstname" type="text" className="input-border" style={{width: "370px", padding: "5px"}} value={this.state.form.firstname} onChange={this.changeHandler}/>
+                    First Name <input name="firstname" type="text" className="input-border"  value={this.state.form.firstname} onChange={this.changeHandler}/>
                 </label>
                 <label>
-                    Last Name <input name="lastname" type="text" className="input-border" style={{width: "370px", padding: "5px"}} value={this.state.form.lastname} onChange={this.changeHandler}/>
+                    Last Name <input name="lastname" type="text" className="input-border"  value={this.state.form.lastname} onChange={this.changeHandler}/>
                 </label>
                  <label>
                     I live in <select name="country_id" className="input-border">

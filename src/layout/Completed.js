@@ -59,7 +59,7 @@ export default class Completed extends React.Component {
                             :</span>
                         <span className='seconds'>{this.timer.currentSec.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })}</span>
                         seconds!</p>
-                    <button onClick={this.handleWhatsApp}>SHARE <span style={{ position: 'absolute', right: '13px', top: '3px' }}><img src={ShareIcon} alt="share icon" width="20" height="20" /></span></button>
+                    <button style={{ display: 'none'}} onClick={this.handleWhatsApp}>SHARE <span style={{ position: 'absolute', right: '13px', top: '3px' }}><img src={ShareIcon} alt="share icon" width="20" height="20" /></span></button>
 
                     <div className='form'>
                         <h4>Congratulations! You completed Loquet Suduko!</h4>
