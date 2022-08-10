@@ -59,6 +59,17 @@
   display: block;
 }
 
+.form-fields input {
+  width: 100%;
+  max-width: 370px;
+  padding: 5px;
+}
+
+.form-fields select {
+  width: 100%;
+  max-width: 430px;
+}
+
 @media (max-width: 991px) {
   .container {
     max-width: 100% !important;
@@ -136,7 +147,21 @@
     width: 100% !important;
     height: 100% !important;
     max-width: 80px;
-    
+  }
+
+  .form-fields {
+    width:100%;
+  }
+
+  .form-fields select {
+    width: 100%;
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-fields {
+    margin-top: 112px;
   }
 }
 
