@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { confirm } from "react-confirm-box";
 import Timer from './Timer';
-import SweetAlert from 'sweetalert-react';
-import 'sweetalert/dist/sweetalert.css';
+
 
 // import new sets of charms
 import Clam from './../assets/charms-icons/clam.png'
@@ -28,6 +27,8 @@ const Box = styled.div`
 
 @media (max-width: 834px) {
   background-color: #fff !important;
+  width: 70px;
+  height: 70px;
 }
 
 @media (max-width: 354px) {
@@ -42,6 +43,10 @@ const GridItems = styled.div`
   align-items: flex-start;
   max-width: 365px;
   width: 100%;
+
+  @media (max-width: 834px) {
+    max-width: 307px;
+  }
 `;
 
 
@@ -51,11 +56,6 @@ class Grids extends Component {
     img_2 = <img src={Dolphin} draggable="true" alt="" width="60" height="62" />;
     img_3 = <img src={Lobster} draggable="true" alt="" width="60" height="62" />;
     img_4 = <img src={PalmTree} draggable="true" alt="" width="60" height="62" />;
-     data = {
-        message: 'Check out this website', // required
-        title: 'Awesome Website', // optional parameter
-        url: 'https://www.awesomeexample.com', // optional parameter
-      };
     counter = 0;
     constructor() {
         super();
@@ -145,12 +145,10 @@ class Grids extends Component {
                 sudukoPuzzle: this.state.sudukoPuzzle, selectedIndex: 0, wrongSelection: this.state.wrongSelection, blockCell: this.countEmptyCell(),
                 dragEnd: this.state.dragEnd,
                 startTimer: false,
-                openMsg: true,
                 resetTime: this.state.resetTime
             });
 
             setTimeout(() => {
-                this.closeModal();
                 window.location.replace("./completed");
             }, 3000)
         }
@@ -197,15 +195,6 @@ class Grids extends Component {
             });
         }
     }
-    closeModal = () => {
-        this.setState({
-            sudukoPuzzle: this.state.sudukoPuzzle, selectedIndex: 0, wrongSelection: this.state.wrongSelection, blockCell: this.countEmptyCell(),
-            dragEnd: [...this.state.dragEnd],
-            startTimer: false,
-            openMsg: false,
-            resetTime: this.state.resetTime
-        })
-    }
 
     resetAfter24Hours() {
         setInterval(() => {
@@ -221,19 +210,6 @@ class Grids extends Component {
 
         return (
             <div className='flex-container'>
-                <SweetAlert
-                    show={this.state.openMsg}
-                    title="congratulations"
-                    type="success"
-                    text="You completed the game"
-                    showCancelButton
-                    onConfirm={() => { // eslint-disable-line no-console
-                        this.closeModal()
-                    }}
-                    onCancel={() => { // eslint-disable-line no-console
-                        this.closeModal()
-                    }}
-                />
                 <Container>
                     <Row>
                         <Col sm={12} md={6} lg={4} className="item1">
