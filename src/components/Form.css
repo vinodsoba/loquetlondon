@@ -41,7 +41,7 @@ label {
 .form-thankyou p {
     width: 296px;
     height: 34.59px;
-    font-family: 'Fournier';
+    font-family: 'Fournier MT';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -54,13 +54,14 @@ label {
 
 
 .form label {
-    font-style: normal;
+    font-family: 'Fournier MT Pro';
     font-weight: 400;
     font-size: 15px; 
+    line-height: 21.64px;
 }
 .form h4 {
     text-transform: uppercase;
-    font-family: 'Fournier';
+    font-family: 'Fournier MT Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -74,7 +75,17 @@ label {
 
 }
 
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 990px) {
+    .form h4 {
+        font-size: 21px;
+        line-height: 24.63px
+    }
+}
+
 .form button {
+    font-family: 'Fournier MT';
+    font-weight: 400;
     height: 34px;
     background: #332F2F;
     border: none;
@@ -84,4 +95,10 @@ label {
     width: 100%;
     margin-top: 2em;
     margin-bottom: 1em;
+}
+
+p#timerText {
+    font-family: 'Fournier MT Pro';
+    font-size: 21px;
+    color: #fff;
 }

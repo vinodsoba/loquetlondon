@@ -20,7 +20,7 @@ const Box = styled.div`
     height: 80px;
     margin:5px;
     border-radius: 10px; 
-    background-color: #FAFAF8;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +214,7 @@ class Grids extends Component {
                     <Row>
                         <Col sm={12} md={6} lg={4} className="item1">
                             <div className='timer'><Timer time={this.state.startTimer} resetTime={this.state.resetTime}/></div>
-                            <GridItems>
+                            <GridItems className='grid-items'>
                                 <Row> {
                                     this.state.sudukoPuzzle && this.state.sudukoPuzzle.map((res, row) =>
 
@@ -232,8 +232,8 @@ class Grids extends Component {
                                     )
                                 }</Row>
                                 <div className='grid-button'>
-                                    <button id="btn__reset" onClick={this.gameReset}>reset</button>
-                                    <button id="btn__reset" onClick={this.reversePosition}>undo</button>
+                                    <button id="btn__reset" onClick={this.gameReset}>RESET</button>
+                                    <button id="btn__reset" onClick={this.reversePosition}>UNDO</button>
                                 </div>
                             </GridItems>
                         </Col>
