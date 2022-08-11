@@ -1,6 +1,11 @@
 @font-face {
-  font-family: 'Fournier';
-  src: url('./assets/fonts/Fournier/33F1D6_0_0.woff');
+  font-family: 'Fournier MT Pro';
+  src: url('./assets/fonts/Fournier/FournierMTPro_Regular.woff');
+}
+
+@font-face {
+  font-family: 'Fournier MT';
+  src: url('./assets/fonts/Fournier/FournierMT_Regular_SC.woff');
 }
 
 body {
@@ -52,7 +57,7 @@ code {
 }
 
 button#btn__reset {
-font-family: 'Fournier MT Regular SC';
+font-family: 'Fournier MT';
 font-style: normal;
 font-weight: 400;
 font-size: 21px;
@@ -63,7 +68,7 @@ border: none;
 flex-grow: 1;
 text-align: center;
 letter-spacing: 0.06em;
-
+padding: 1em;
 color: #FFFFFF;
 }
 

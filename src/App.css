@@ -15,12 +15,13 @@
 }
 
 .timer {
-  font-family: 'Fournier';
-  font-size: 27px;
+  font-family: 'Helvetica Neue';
+  font-size: 17px;
   font-weight: 500;
   line-height: 21.13px;
   text-align: center;
   max-width: 318px;
+  font-style: normal;
 }
 
 .timer > span {
@@ -46,7 +47,7 @@
 }
 
 .help__guide {
-  padding-top: 7em;
+  padding-top: 5em;
   justify-content: center;
   display: grid;
 }
@@ -68,6 +69,40 @@
 .form-fields select {
   width: 100%;
   max-width: 430px;
+}
+
+@media screen and (min-width: 383px) and (max-width: 600px) {
+  .timer {
+    font-size: 14px;
+    line-height: 17.4px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .box {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .grid-items {
+    max-width: 457px !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .timer {
+    max-width: 470px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 17.4px;
+  }
+
 }
 
 @media (max-width: 991px) {
@@ -132,6 +167,7 @@
     position: relative;
     bottom: 0;
     left:0;
+    border-radius: 17px 17px 0 0;
   }
 
   .rounded__box {
@@ -159,6 +195,8 @@
   }
 }
 
+
+
 @media (max-width: 400px) {
   .form-fields {
     margin-top: 112px;
@@ -166,7 +204,7 @@
 }
 
 .help__guide--paragraph {
-    font-family: 'Fournier';
+    font-family: 'Fournier MT';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -181,7 +219,7 @@
 }
 
 .help__guide--headline-how-to h4 {
-  font-family: 'Fournier';
+  font-family: 'Fournier MT';
   font-style: normal;
   font-weight: 400;
   color: #FFFFFF;
@@ -199,7 +237,7 @@
   padding-top: 2em;
   line-height: 104.3%;
   font-size: 19px;
-  font-family: 'Fournier';
+  font-family: 'Fournier MT';
   font-style: normal;
   font-weight: 400;
 }
@@ -231,6 +269,7 @@
 
 .flex-container {
   display: flex;
+  margin-top: 86px;
 }
 .item1.col-lg-4.col-md-6.col-sm-12 {
   flex-grow: 1;
@@ -300,7 +339,7 @@
   max-width: 424px;
   width: 100%;
   height: 101.59px;
-  font-family: 'Fournier';
+  font-family: 'Fournier MT';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -317,7 +356,7 @@
   bottom: 20px;
   width: 297px;
   height: 46px;
-  font-family: 'Fournier';
+  font-family: 'Fournier MT Pro';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;

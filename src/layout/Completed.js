@@ -23,10 +23,10 @@ const Wrapper = styled.div`
     background-image: url(${BackgroundImg});
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     
 
-    @media (max-width: 834px) {
+    @media (max-width: 990px) {
         background-image: url(${MobileBackgroundImg});
         background-size: cover;
         height: 100%;
@@ -53,7 +53,7 @@ export default class Completed extends React.Component {
             <Wrapper>
                 <Logo />
                  <div className="completed__task">
-                 <p id="timerText" style={{ fontFamily: 'Fournier', fontSize: '21px', color: '#fff'}}>You completed it in
+                 <p id="timerText">You completed it in
                         <span className='digits min'>{
                             this.timer.currentMin.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })}
                             :</span>
